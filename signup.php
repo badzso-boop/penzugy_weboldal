@@ -11,7 +11,7 @@
         include_once 'header.php';
     ?>
     <section class="signup-form">
-        <h2>Sign Up</h2>
+        <h2>Regisztráció</h2>
         <form action="includes/signup.inc.php" method = "post">
             <input type="text" name = "name" placeholder = "Teljes név" class = "form">
             <br>
@@ -23,34 +23,35 @@
             <br>
             <input type="password" name = "pwdrepeat" placeholder = "Jelszó újra" class = "form">
             <br>
-            <button type = "submit" name = "submit" class = "button">Sign up</button>
+            <button type = "submit" name = "submit" class = "button">Regisztráció</button>
         </form>
-
-        <?php
-            if (isset($_GET["error"])) {
-                if ($_GET["error"] == "emptyinput") {
-                    echo "<p>Fill in all fields</p>";
+        <div class = "wrong">
+            <?php
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"] == "emptyinput") {
+                        echo "<p>Töltsd ki az összes mezőt!</p>";
+                    }
+                    else if ($_GET["error"] == "invaliduid") {
+                        echo "<p>Válassz másik felhasználónevet!</p>";
+                    }
+                    else if ($_GET["error"] == "invalidemail") {
+                        echo "<p>Válassz másik emailt!</p>";
+                    }
+                    else if ($_GET["error"] == "passworddontmatch") {
+                        echo "<p>A jelszavak nem egyeznek!</p>";
+                    }
+                    else if ($_GET["error"] == "stmtfailed") {
+                        echo "<p>Valami hiba történt, próbáld újra!</p>";
+                    }
+                    else if ($_GET["error"] == "usernametaken") {
+                        echo "<p>Felhasználónév foglalt!</p>";
+                    }
+                    else if ($_GET["error"] == "none") {
+                        echo "<p>Sikeres Belépés!</p>";
+                    }
                 }
-                else if ($_GET["error"] == "invaliduid") {
-                    echo "<p>Chose another username!</p>";
-                }
-                else if ($_GET["error"] == "invalidemail") {
-                    echo "<p>Chose another email!</p>";
-                }
-                else if ($_GET["error"] == "passworddontmatch") {
-                    echo "<p>Password don't match</p>";
-                }
-                else if ($_GET["error"] == "stmtfailed") {
-                    echo "<p>Something went wrond, try again!</p>";
-                }
-                else if ($_GET["error"] == "usernametaken") {
-                    echo "<p>Username alredy taken</p>";
-                }
-                else if ($_GET["error"] == "none") {
-                    echo "<p>You have signed up!</p>";
-                }
-            }
-        ?>
+            ?>
+        </div>
     </section>
 
     <?php

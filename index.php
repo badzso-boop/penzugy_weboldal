@@ -21,7 +21,7 @@
         }
     ?>
     <h1 class = "cim">Pénzügy</h1>
-    <p class = "szoveg">Üdvözöllek a saját online pénztárcádban! <br> Először is <span class = "cimszavak">regisztrálj</span> vagy ha már van fiókod <span class = "cimszavak">lépj be!</span></p>
+    <p class = "szoveg">Üdvözöllek a saját online pénztárcádban! <br> Először is <a href = "signup.php" class = "cimszavak">regisztrálj</a> vagy ha már van fiókod <a href = "login.php" class = "cimszavak">lépj be!</a></p>
     <?php
         include_once 'footer.php';
     ?>
