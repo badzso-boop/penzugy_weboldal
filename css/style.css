@@ -116,7 +116,8 @@
 
 .form
 {
-    margin: 15px;
+    margin: 10px;
+    padding: 5px;
     height: 45px;
     width: 255px;
 }
@@ -137,7 +138,12 @@
 
 .wrong
 {
-    margin: 25px;
+    margin: 25px auto;
+    padding-top: 5px;
+    width: 35%;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 25px;
     background-color: red;
     text-transform: uppercase;
 }
