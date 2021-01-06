@@ -1,0 +1,134 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+.cim
+{
+    text-align: center;
+    margin: 5% auto;
+    border: 2px solid;
+    border-radius: 25px;
+    width: 35%;
+    background-color: rgba(46, 209, 141, 0.7);
+}
+
+.szoveg
+{
+    text-align: center;
+    margin: 25px;
+    font-size: 18px;
+}
+
+.cimszavak
+{
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.tabla
+{
+    border: 2px solid;
+    width: 100%;
+}
+
+.tabla td
+{
+    padding: 15px;
+    border: 2px solid;
+}
+
+.header
+{
+    border: 2px solid;
+    background-color: rgba(237, 219, 17, 0.5);
+    margin: 15px;
+    list-style: none;
+}
+
+.header li
+{
+    display: inline-block;
+    margin: 15px;
+    transition: 0.5s ease-in-out;
+    background-color:  rgba(46, 209, 141, 0.7);
+    padding: 15px;
+}
+
+.header li:hover
+{
+    background-color: green;
+}
+
+.header a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.footer
+{
+    border: 2px solid;
+    background-color: rgba(237, 219, 17, 0.5);
+    width: 50%;
+    margin: 15px auto;
+    list-style: none;
+    text-align: center;
+}
+
+.footer li
+{
+    display: inline-block;
+    margin: 10px;
+    transition: 0.5s ease-in-out;
+    padding: 5px;
+}
+
+.footer li:hover
+{
+    background-color: green;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.main
+{
+    text-align: center;
+    width: 80%;
+    height: 600px;
+    background-color: grey;
+    margin: 0% auto;
+    border: 2px solid;
+}
+
+.signup-form
+{
+    margin: 25px;
+}
+
+.form
+{
+    margin: 15px;
+    height: 45px;
+    width: 255px;
+}
+
+.button
+{
+    padding: 20px;
+    font-size: 18px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.button:hover
+{
+    background-color: green;
+    border: none;
+}
